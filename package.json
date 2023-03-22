@@ -14,13 +14,10 @@
     "url": "https://github.com/npm/statusboard/issues"
   },
   "homepage": "https://github.com/npm/statusboard#readme",
-  "workspaces": [
-    "workspaces/*"
-  ],
   "devDependencies": {
-    "@npmcli/eslint-config": "^4.0.0",
     "@npmcli/template-oss": "4.12.1",
-    "tap": "^16.3.0"
+    "@npmcli/eslint-config": "^4.0.1",
+    "tap": "^16.3.4"
   },
   "templateOSS": {
     "//@npmcli/template-oss": "This file is partially managed by @npmcli/template-oss. Edits may be overwritten.",

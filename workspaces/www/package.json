@@ -28,11 +28,11 @@
   },
   "homepage": "https://github.com/npm/statusboard#readme",
   "devDependencies": {
-    "@npmcli/eslint-config": "^4.0.0",
     "@npmcli/template-oss": "4.12.1",
-    "esbuild": "^0.17.4",
+    "@npmcli/eslint-config": "^4.0.1",
+    "esbuild": "^0.17.12",
     "http-server": "^14.1.1",
-    "tap": "^16.3.0"
+    "tap": "^16.3.4"
   },
   "files": [
     "bin/",
@@ -50,15 +50,15 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
-    "bootstrap-icons": "^1.9.1",
-    "data": "^1.0.0",
-    "datatables.net": "^1.12.1",
-    "datatables.net-bs4": "^1.12.1",
-    "datatables.net-buttons": "^2.2.3",
-    "datatables.net-buttons-bs4": "^2.2.3",
+    "bootstrap-icons": "^1.10.3",
+    "data": "workspace:^1.0.0",
+    "datatables.net": "^1.13.4",
+    "datatables.net-bs4": "^1.13.4",
+    "datatables.net-buttons": "^2.3.6",
+    "datatables.net-buttons-bs4": "^2.3.6",
     "date-fns": "^2.29.3",
     "dotenv": "^16.0.3",
-    "jquery": "^3.6.1",
+    "jquery": "^3.6.4",
     "normalize.css": "^8.0.1",
     "semver": "^7.3.8"
   },

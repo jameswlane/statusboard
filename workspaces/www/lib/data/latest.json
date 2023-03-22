@@ -1,0 +1,86 @@
+[
+  {
+    "id": "jameswlane_statusboard",
+    "name": "statusboard",
+    "owner": "jameswlane",
+    "path": null,
+    "defaultBranch": "main",
+    "url": "https://github.com/jameswlane/statusboard",
+    "lastPush": {
+      "date": "2023-03-22T20:07:45Z",
+      "url": "https://github.com/jameswlane/statusboard/commit/a49021f1b746c4b7b87036b8efdb12019c4e36a1"
+    },
+    "archived": false,
+    "status": {
+      "url": "https://github.com/jameswlane/statusboard/actions/runs/4494030170/jobs/7906002517",
+      "conclusion": "failure"
+    },
+    "stars": {
+      "count": 0,
+      "url": "https://github.com/jameswlane/statusboard/stargazers"
+    },
+    "pkgPrivate": true,
+    "pkgName": "statusboard",
+    "coverage": 100,
+    "templateVersion": "4.12.0",
+    "license": "ISC",
+    "node": ">=18.0.0",
+    "version": null,
+    "repoVersion": "1.0.0",
+    "lastPublished": null,
+    "size": null,
+    "pkgUrl": null,
+    "deprecated": false,
+    "downloads": null,
+    "discussions": {
+      "count": 0,
+      "url": "https://github.com/jameswlane/statusboard/discussions?discussions_q=",
+      "unanswered": {
+        "count": 0,
+        "url": "https://github.com/jameswlane/statusboard/discussions?discussions_q=is%3Aunanswered",
+        "history": [
+          0
+        ]
+      },
+      "history": [
+        0
+      ]
+    },
+    "prs": {
+      "count": 0,
+      "url": "https://github.com/jameswlane/statusboard/pulls?q=is%3Aopen",
+      "release": null,
+      "history": [
+        0
+      ]
+    },
+    "issues": {
+      "count": 0,
+      "url": "https://github.com/jameswlane/statusboard/issues?q=is%3Aopen",
+      "unlabeled": {
+        "count": 0,
+        "url": "https://github.com/jameswlane/statusboard/issues?q=is%3Aopen+no%3Alabel",
+        "history": [
+          0
+        ]
+      },
+      "priority": {
+        "count": 0,
+        "url": "https://github.com/jameswlane/statusboard/issues?q=is%3Aopen+label%3A%22Priority+1%22%2C%22Priority+0",
+        "history": [
+          0
+        ]
+      },
+      "triage": {
+        "count": 0,
+        "url": "https://github.com/jameswlane/statusboard/issues?q=is%3Aopen+label%3A%22Needs+Triage%22",
+        "history": [
+          0
+        ]
+      },
+      "history": [
+        0
+      ]
+    }
+  }
+]
