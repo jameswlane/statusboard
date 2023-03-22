@@ -1,8 +1,8 @@
 ## 📊 statusboard
 
-[**npm.github.io/statusboard**](https://npm.github.io/statusboard/)
+[**jameswlane.github.io/statusboard**](https://jameswlane.github.io/statusboard/)
 
-A single view to help monitor the status/health of the [`@npm/cli`](https://github.com/orgs/npm/teams/cli) teams's Open Source Projects.
+A single view to help monitor the status/health of my Open Source Projects.
 
 ### Data
 
