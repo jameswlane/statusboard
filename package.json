@@ -1,0 +1,65 @@
+{
+  "name": "statusboard",
+  "version": "1.0.0",
+  "description": "Community &amp; Open Source Statusboard",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/npm/statusboard.git"
+  },
+  "keywords": [],
+  "author": "GitHub Inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/npm/statusboard/issues"
+  },
+  "homepage": "https://github.com/npm/statusboard#readme",
+  "workspaces": [
+    "workspaces/*"
+  ],
+  "devDependencies": {
+    "@npmcli/eslint-config": "^4.0.0",
+    "@npmcli/template-oss": "4.12.0",
+    "tap": "^16.3.0"
+  },
+  "templateOSS": {
+    "//@npmcli/template-oss": "This file is partially managed by @npmcli/template-oss. Edits may be overwritten.",
+    "version": "4.12.0",
+    "ciVersions": "latest",
+    "windowsCI": false,
+    "macCI": false,
+    "lockfile": true,
+    "workspaceRepo": {
+      "add": {
+        ".github/dependabot.yml": false
+      }
+    }
+  },
+  "tap": {
+    "test-ignore": "^(workspaces)/",
+    "nyc-arg": [
+      "--exclude",
+      "workspaces/**",
+      "--exclude",
+      "tap-snapshots/**"
+    ]
+  },
+  "scripts": {
+    "template-oss-apply": "template-oss-apply --force",
+    "lint": "eslint \"**/*.js\"",
+    "postlint": "template-oss-check",
+    "lintfix": "npm run lint -- --fix",
+    "snap": "tap",
+    "test": "tap",
+    "posttest": "npm run lint",
+    "test-all": "npm run test -ws -iwr --if-present",
+    "lint-all": "npm run lint -ws -iwr --if-present"
+  },
+  "files": [
+    "bin/",
+    "lib/"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
