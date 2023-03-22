@@ -10,7 +10,7 @@ permissions:
 jobs:
   template-oss:
     name: template-oss
-    if: github.repository_owner == 'npm' && github.actor == 'dependabot[bot]'
+    if: github.repository_owner == 'jameswlane' && github.actor == 'dependabot[bot]'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -22,19 +22,19 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
       - name: Setup Git User
         run: |
-          git config --global user.email "npm-cli+bot@github.com"
-          git config --global user.name "npm CLI robot"
+          git config --global user.email "github+action@github.com"
+          git config --global user.name "GitHub Action Bot"
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
           cache: npm
-      - name: Install npm@latest
-        run: npm i --prefer-online --no-fund --no-audit -g npm@latest
-      - name: npm Version
-        run: npm -v
+      - name: Install pnpm@latest
+        run: npm i --prefer-online --no-fund --no-audit -g pnpm@latest
+      - name: pnpm Version
+        run: pnpm -v
       - name: Install Dependencies
-        run: npm i --ignore-scripts --no-audit --no-fund
+        run: pnpm i --ignore-scripts --frozen-lockfile
       - name: Fetch Dependabot Metadata
         id: metadata
         uses: dependabot/fetch-metadata@v1
