@@ -11,24 +11,23 @@
     "lint": "eslint \"**/*.js\"",
     "postlint": "template-oss-check",
     "template-oss-apply": "template-oss-apply --force",
-    "lintfix": "npm run lint -- --fix",
+    "lintfix": "eslint \"**/*.js\" --fix",
     "snap": "tap",
-    "posttest": "npm run lint"
+    "posttest": "eslint \"**/*.js\""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/npm/statusboard.git",
+    "url": "https://github.com/jameswlane/statusboard.git",
     "directory": "workspaces/www"
   },
   "keywords": [],
   "author": "GitHub Inc.",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/npm/statusboard/issues"
+    "url": "https://github.com/jameswlane/statusboard/issues"
   },
-  "homepage": "https://github.com/npm/statusboard#readme",
+  "homepage": "https://github.com/jameswlane/statusboard#readme",
   "devDependencies": {
-    "@npmcli/template-oss": "4.12.1",
     "@npmcli/eslint-config": "^4.0.1",
     "esbuild": "^0.17.12",
     "http-server": "^14.1.1",
@@ -39,14 +38,8 @@
     "lib/"
   ],
   "engines": {
-    "node": ">=18.0.0"
-  },
-  "templateOSS": {
-    "//@npmcli/template-oss": "This file is partially managed by @npmcli/template-oss. Edits may be overwritten.",
-    "version": "4.12.0",
-    "ciVersions": "latest",
-    "windowsCI": false,
-    "macCI": false
+    "node": ">=18",
+    "pnpm": ">=7"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",

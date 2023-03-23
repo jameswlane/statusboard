@@ -5,32 +5,18 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/npm/statusboard.git"
+    "url": "https://github.com/jameswlane/statusboard.git"
   },
   "keywords": [],
   "author": "GitHub Inc.",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/npm/statusboard/issues"
+    "url": "https://github.com/jameswlane/statusboard/issues"
   },
-  "homepage": "https://github.com/npm/statusboard#readme",
+  "homepage": "https://github.com/jameswlane/statusboard#readme",
   "devDependencies": {
-    "@npmcli/template-oss": "4.12.1",
     "@npmcli/eslint-config": "^4.0.1",
     "tap": "^16.3.4"
-  },
-  "templateOSS": {
-    "//@npmcli/template-oss": "This file is partially managed by @npmcli/template-oss. Edits may be overwritten.",
-    "version": "4.12.0",
-    "ciVersions": "latest",
-    "windowsCI": false,
-    "macCI": false,
-    "lockfile": true,
-    "workspaceRepo": {
-      "add": {
-        ".github/dependabot.yml": false
-      }
-    }
   },
   "tap": {
     "test-ignore": "^(workspaces)/",
@@ -44,19 +30,19 @@
   "scripts": {
     "template-oss-apply": "template-oss-apply --force",
     "lint": "eslint \"**/*.js\"",
-    "postlint": "template-oss-check",
-    "lintfix": "npm run lint -- --fix",
+    "lintfix": "eslint \"**/*.js\" --fix",
     "snap": "tap",
     "test": "tap",
-    "posttest": "npm run lint",
-    "test-all": "npm run test -ws -iwr --if-present",
-    "lint-all": "npm run lint -ws -iwr --if-present"
+    "posttest": "eslint \"**/*.js\"",
+    "test-all": "tap -ws -iwr --if-present",
+    "lint-all": "eslint \"**/*.js\" -ws -iwr --if-present"
   },
   "files": [
     "bin/",
     "lib/"
   ],
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=18",
+    "pnpm": ">=7"
   }
 }
