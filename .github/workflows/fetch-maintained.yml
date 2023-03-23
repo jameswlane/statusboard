@@ -44,8 +44,6 @@ jobs:
           fi
       - name: Commit changes
         if: steps.status.outputs.has_changes == '1'
-        permissions:
-          contents: write
         run: |
           git add .
           git commit -m "chore: update maintained projects"
