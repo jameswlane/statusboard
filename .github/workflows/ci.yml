@@ -47,5 +47,3 @@ jobs:
         run: pnpm i --ignore-scripts --frozen-lockfile
       - name: Lint
         run: pnpm run lint
-      - name: Post Lint
-        run: pnpm run postlint
