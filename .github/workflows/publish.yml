@@ -30,13 +30,15 @@ jobs:
     
     - name: Setup Pages
       uses: actions/configure-pages@v1
-    - name: Use Node.js
+    - name: Setup pnpm
+      uses: pnpm/action-setup@v2
+      with:
+        version: latest
+    - name: Setup Node
       uses: actions/setup-node@v3
       with:
-        node-version: 18
-        cache: npm
-    - name: Install pnpm@latest
-      run: npm i --prefer-online --no-fund --no-audit -g pnpm@latest
+        node-version: 18.x
+        cache: pnpm
     - run: pnpm -v
     - run: pnpm i --ignore-scripts --frozen-lockfile
     - run: pnpm --filter www build

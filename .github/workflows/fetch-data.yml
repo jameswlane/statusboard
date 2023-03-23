@@ -20,12 +20,15 @@ jobs:
         run: |
           git config --global user.email "github+action@github.com"
           git config --global user.name "GitHub Action Bot"
-      - uses: actions/setup-node@v3
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
         with:
-          node-version: 18
-          cache: npm
-      - name: Update npm to latest
-        run: npm i --prefer-online --no-fund --no-audit -g pnpm@latest
+          version: latest
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: pnpm
       - run: pnpm -v
       - run: pnpm i --ignore-scripts --frozen-lockfile
       - run: pnpm --filter data fetch:maintained

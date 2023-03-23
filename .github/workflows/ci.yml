@@ -32,13 +32,15 @@ jobs:
         run: |
           git config --global user.email "github+action@github.com"
           git config --global user.name "GitHub Action Bot"
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
-          cache: npm
-      - name: Install pnpm@latest
-        run: npm i --prefer-online --no-fund --no-audit -g pnpm@latest
+          cache: pnpm
       - name: pnpm Version
         run: pnpm -v
       - name: Install Dependencies
