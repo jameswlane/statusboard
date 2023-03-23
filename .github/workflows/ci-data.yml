@@ -44,6 +44,6 @@ jobs:
       - name: Install Dependencies
         run: pnpm i --ignore-scripts --frozen-lockfile
       - name: Lint
-        run: npm run lint --ignore-scripts -w data
+        run: pnpm run lint --ignore-scripts -w data
       - name: Post Lint
-        run: npm run postlint --ignore-scripts -w data
+        run: pnpm run postlint --ignore-scripts -w data

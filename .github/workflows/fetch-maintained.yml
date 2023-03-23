@@ -24,11 +24,11 @@ jobs:
         with:
           node-version: 18
           cache: npm
-      - name: Update npm to latest
-        run: npm i --prefer-online --no-fund --no-audit -g npm@latest
-      - run: npm -v
-      - run: npm i --ignore-scripts --no-audit --no-fund --package-lock
-      - run: npm run fetch:maintained -w data
+      - name: Install pnpm@latest
+        run: npm i --prefer-online --no-fund --no-audit -g pnpm@latest
+      - run: pnpm -v
+      - run: pnpm i --ignore-scripts --frozen-lockfile
+      - run: pnpm --filter data fetch:maintained
         continue-on-error: true
         env:
           AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

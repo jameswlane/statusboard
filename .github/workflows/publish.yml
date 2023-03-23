@@ -35,11 +35,11 @@ jobs:
       with:
         node-version: 18
         cache: npm
-    - name: Update npm to latest
-      run: npm i --prefer-online --no-fund --no-audit -g npm@latest
-    - run: npm -v
-    - run: npm i --ignore-scripts --no-audit --no-fund --package-lock
-    - run: npm run build -w www
+    - name: Install pnpm@latest
+      run: npm i --prefer-online --no-fund --no-audit -g pnpm@latest
+    - run: pnpm -v
+    - run: pnpm i --ignore-scripts --frozen-lockfile
+    - run: pnpm --filter www build
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v1
       with:

@@ -35,6 +35,6 @@ jobs:
       - name: Install Dependencies
         run: pnpm i --ignore-scripts --frozen-lockfile
       - name: Run Production Audit
-        run: npm audit --prod
+        run: pnpm audit --prod
       - name: Run Full Audit
-        run: npm audit
+        run: pnpm audit
