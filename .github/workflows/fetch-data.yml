@@ -50,5 +50,8 @@ jobs:
 
   publish:
     needs: fetch
+    permissions:
+      pages: write
+      id-token: write
     if: needs.fetch.outputs.has_changes == '1'
     uses: ./.github/workflows/publish.yml

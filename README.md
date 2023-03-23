@@ -8,7 +8,7 @@ A single view to help monitor the status/health of my Open Source Projects.
 
 #### Adding a project
 
-[GitHub search query for `org:npm topic:npm-cli fork:true`](https://github.com/search?q=org%3Anpm+topic%3Anpm-cli+fork%3Atrue&type=repositories)
+[GitHub search query for `org:jameswlane topic:jwl-sb fork:true`](https://github.com/search?q=org%3Ajameswlane+topic%3Ajwl-sb+fork%3Atrue&type=repositories)
 
 To be included here a repo must be in the `npm` org and have the `npm-cli` topic added to it. The data is rebuilt daily so the repo should appear by the next day.
 
