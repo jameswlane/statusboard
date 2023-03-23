@@ -3,7 +3,7 @@ name: Fetch Daily Data
 on:
   workflow_dispatch:
   schedule:
-    # "Everyday at 12:00 UTC (5:00 PT)" https://crontab.guru/#0_12_*_*_*
+    # "Everyday at 12:00 UTC" https://crontab.guru/#0_12_*_*_*
     - cron: "0 12 * * *"
 
 jobs:

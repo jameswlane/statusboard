@@ -1,0 +1,33 @@
+name: update dependencies
+
+on:
+  schedule:
+    - cron:  '0 5 * * 1'
+    # "At 05:00 UTC on Monday" https://crontab.guru/#0_5_*_*_1
+
+jobs:
+  udpate-deps:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2.2.2
+        with:
+          version: latest
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: 'pnpm'
+      - run: pnpm install --no-frozen-lockfile
+      - run: pnpm update
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.PR_CREATE_TOKEN }}
+          commit-message: Update dependencies
+          title: "update dependencies"
+          body: |
+            ## Dependency updates
+            [1]: https://github.com/<org/user name>/<repo name>
+            [2]: https://github.com/peter-evans/create-pull-request
+          branch: update-dependencies
