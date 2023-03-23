@@ -20,7 +20,7 @@ on:
 jobs:
   lint:
     name: Lint
-    if: github.repository_owner == 'npm'
+    if: github.repository_owner == 'jameswlane'
     runs-on: ubuntu-latest
     defaults:
       run:

@@ -9,7 +9,8 @@ on:
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    continue-on-error: true
+    permissions:
+      contents: write
     outputs:
       has_changes: ${{ steps.status.outputs.has_changes }}
     steps:
@@ -43,8 +44,6 @@ jobs:
           fi
       - name: Commit changes
         if: steps.status.outputs.has_changes == '1'
-        permissions:
-          contents: write
         run: |
           git add .
           git commit -m "chore: update data"
