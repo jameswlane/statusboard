@@ -22,11 +22,6 @@
     "pkg": "jameswlane"
   },
   {
-    "id": "jameswlane_jameswlane.com",
-    "name": "jameswlane.com",
-    "owner": "jameswlane"
-  },
-  {
     "id": "jameswlane_jest-node-http",
     "name": "jest-node-http",
     "owner": "jameswlane",
