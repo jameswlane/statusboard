@@ -28,11 +28,6 @@
     "pkg": "jest-node-http"
   },
   {
-    "id": "jameswlane_jwl.codes",
-    "name": "jwl.codes",
-    "owner": "jameswlane"
-  },
-  {
     "id": "jameswlane_jwl.im",
     "name": "jwl.im",
     "owner": "jameswlane"
