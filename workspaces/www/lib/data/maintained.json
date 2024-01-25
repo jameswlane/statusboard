@@ -10,12 +10,6 @@
     "owner": "jameswlane"
   },
   {
-    "id": "jameswlane_helper-utility",
-    "name": "helper-utility",
-    "owner": "jameswlane",
-    "pkg": "helper-utility"
-  },
-  {
     "id": "jameswlane_jameswlane",
     "name": "jameswlane",
     "owner": "jameswlane",
@@ -26,11 +20,6 @@
     "name": "jest-node-http",
     "owner": "jameswlane",
     "pkg": "jest-node-http"
-  },
-  {
-    "id": "jameswlane_jwl.codes",
-    "name": "jwl.codes",
-    "owner": "jameswlane"
   },
   {
     "id": "jameswlane_jwl.im",
